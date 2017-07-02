@@ -1,3 +1,4 @@
+import Instructions from './components/Instructions';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Releases from './components/Releases';
@@ -21,6 +22,7 @@ ReactDOM.render(
         <Releases />
         <hr />
         <h3>Updating Firmware</h3>
+        <Instructions />
     </div>,
     document.body.appendChild(document.createElement('div'))
 );
