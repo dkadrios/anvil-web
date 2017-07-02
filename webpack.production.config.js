@@ -14,15 +14,21 @@ module.exports = {
     module: {
         loaders: [
             {
+                test: /\.less$/,
+                include: path.resolve(__dirname, 'app'),
+                loader: 'style-loader!css-loader!less-loader'
+            }, {
                 test: /\.css$/,
                 include: path.resolve(__dirname, 'app'),
                 loader: 'style-loader!css-loader'
-            },
-            {
+            }, {
                 test: /\.js[x]?$/,
                 include: path.resolve(__dirname, 'app'),
                 exclude: /node_modules/,
                 loader: 'babel-loader'
+            }, {
+                test: /\.md$/,
+                loader: 'html-loader!markdown-loader?gfm=false'
             }
         ]
     },
@@ -41,8 +47,8 @@ module.exports = {
             }
         }),
         new CopyWebpackPlugin([
-            { from: './app/index.html', to: 'index.html' },
-            { from: './app/main.css', to: 'main.css' }
+            { from: './app/index.html', to: 'index.html' }/*,
+            { from: './app/main.css', to: 'main.css' }*/
         ])
     ]
 };
