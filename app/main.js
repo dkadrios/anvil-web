@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import App from './components/App';
 import Releases from './components/Releases';
+
+require('./main.less');
 
 ReactDOM.render(
     <div>
-        <div>
-            Anvil is the operating system used by <a href="https://zendrum.com">Zendrum STOMPBOX</a>.<br />
+        <p>
+            Anvil is the operating system used by {''}
+            <a href="https://zendrum.com">Zendrum STOMPBOX</a>.<br />
             Check back here often for news and updates!
-        </div>
+        </p>
+        <hr />
+        <p className="downloadLink">
+            <a href="https://zendrumstudio.com/includes/anvil/anvil-firmware.zip">
+                Download latest firmware</a>
+        </p>
         <hr />
         <h3>Updates</h3>
         <Releases />

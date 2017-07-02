@@ -19,6 +19,10 @@ module.exports = {
     module: {
         loaders: [
             {
+                test: /\.less$/,
+                include: path.resolve(__dirname, 'app'),
+                loader: 'style-loader!css-loader!less-loader'
+            }, {
                 test: /\.css$/,
                 include: path.resolve(__dirname, 'app'),
                 loader: 'style-loader!css-loader'
