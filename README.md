@@ -1,6 +1,6 @@
 ## ANVIL Web
 
-This is the updates page, shown at [https://zendrumstudio.com](https://zendrumstudio.com).  This has been split into a separate repo and app in order to modularize the main site.
+This is the updates page, shown at <a href="https://zendrumstudio.com" target="_blank">https://zendrumstudio.com</a>.  This has been split into a separate repo and app in order to modularize the main site.
 
 ## Details
 

@@ -9,13 +9,14 @@ ReactDOM.render(
     <div>
         <p>
             Anvil is the operating system used by {''}
-            <a href="https://zendrum.com">Zendrum STOMPBOX</a>.<br />
+            <a href="https://zendrum.com" target="_blank" rel="noopener noreferrer">
+                Zendrum STOMPBOX
+            </a>.<br />
             Check back here often for news and updates!
         </p>
         <hr />
         <p className="downloadLink">
-            <a href="https://zendrumstudio.com/includes/anvil/anvil-firmware.zip">
-                Download latest firmware</a>
+            <a href="https://zendrumstudio.com/includes/anvil/anvil-firmware.zip">Download latest firmware</a>
         </p>
         <hr />
         <h3>Updates</h3>
