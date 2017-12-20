@@ -33,6 +33,10 @@ export default {
         test: /\.md$/,
         loader: 'html-loader!markdown-loader?gfm=false',
       },
+      {
+        test: /\.(svg)$/,
+        loader: 'file-loader?limit=8192',
+      },
     ],
   },
   resolve: {
