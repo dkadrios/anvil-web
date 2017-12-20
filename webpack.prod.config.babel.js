@@ -8,7 +8,7 @@ export default {
   entry: [path.resolve(__dirname, 'app/main.js')],
   output: {
     path: path.resolve(__dirname, 'build'),
-    publicPath: '/',
+    publicPath: './',
     filename: './bundle.js',
   },
   module: {
