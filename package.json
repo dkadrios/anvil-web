@@ -10,7 +10,7 @@
     "url": "git@github.com:dkadrios/anvil-web.git"
   },
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf build",
     "build:webpack": "NODE_ENV=production webpack -p --config webpack.prod.config.babel.js",
     "build": "npm run clean && npm run build:webpack",
     "start": "open http://localhost:8080/ && webpack-dev-server --config webpack.dev.config.babel.js",
@@ -53,6 +53,7 @@
     "markdown-loader": "2.0.1",
     "open-browser-webpack-plugin": "0.0.5",
     "react-markdown": "^3.1.3",
+    "resolve-url-loader": "^2.2.1",
     "style-loader": "0.19.1",
     "validate-commit-msg": "2.14.0",
     "webpack": "3.10.0",

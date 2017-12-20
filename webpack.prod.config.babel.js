@@ -16,7 +16,7 @@ export default {
       {
         test: /\.less$/,
         include: path.resolve(__dirname, 'app'),
-        loader: 'style-loader!css-loader!less-loader',
+        loader: 'style-loader!css-loader!resolve-url-loader!less-loader',
       },
       {
         test: /\.css$/,
@@ -34,7 +34,7 @@ export default {
         loader: 'html-loader!markdown-loader?gfm=false',
       },
       {
-        test: /\.(svg)$/,
+        test: /\.svg$/,
         loader: 'file-loader?limit=8192',
       },
     ],
