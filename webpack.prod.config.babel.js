@@ -3,8 +3,6 @@ import webpack from 'webpack'
 import path from 'path'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 
-const { UglifyJsPlugin } = webpack.optimize
-
 export default {
   devtool: 'cheap-source-map',
   entry: [path.resolve(__dirname, 'app/main.js')],
@@ -41,11 +39,6 @@ export default {
     extensions: ['.js', '.jsx'],
   },
   plugins: [
-    new UglifyJsPlugin({
-      compress: {
-        warnings: false,
-      },
-    }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production'),
