@@ -12,7 +12,6 @@ ReactDOM.render(
             <a href="https://zendrum.com" target="_blank" rel="noopener noreferrer">
                 Zendrum STOMPBOX
             </a>.<br />
-            Check back here often for news and updates!
         </p>
         <hr />
         <p className="downloadLink">

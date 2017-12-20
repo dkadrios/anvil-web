@@ -1,16 +1,14 @@
-import React, {Component} from 'react';
-import ReactMarkdown from 'react-markdown';
+import React, { Component } from 'react'
+import ReactMarkdown from 'react-markdown'
 
-import markdownFile from '../HEX-README.md';
+import markdownFile from '../HEX-README.md'
 
-require('./Instructions.less');
+require('./Instructions.less')
 
-class Instructions extends Component {
-    render() {
-        return <div className="Instructions">
-            <ReactMarkdown source={markdownFile} />
-        </div>;
-    }
-}
+const Instructions = () => (
+  <div className="Instructions">
+    <ReactMarkdown source={markdownFile} escapeHtml={false} />
+  </div>
+)
 
-export default Instructions;
+export default Instructions

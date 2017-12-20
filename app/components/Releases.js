@@ -1,16 +1,14 @@
-import React, {Component} from 'react';
-import ReactMarkdown from 'react-markdown';
+import React from 'react'
+import ReactMarkdown from 'react-markdown'
 
-import markdownFile from '../HEX-RELEASE.md';
+import markdownFile from '../HEX-RELEASE.md'
 
-require('./Releases.less');
+require('./Releases.less')
 
-class Releases extends Component {
-    render() {
-        return <div className="Releases">
-            <ReactMarkdown source={markdownFile} />
-        </div>;
-    }
-}
+const Releases = () => (
+  <div className="Releases">
+    <ReactMarkdown source={markdownFile} escapeHtml={false} />
+  </div>
+)
 
-export default Releases;
+export default Releases
