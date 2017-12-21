@@ -27,7 +27,7 @@ ReactDOM.render(
     <h3>Updates</h3>
     <Releases />
     <hr />
-    <h3>Updating Firmware</h3>
+    <h3>Applying the Update</h3>
     <Instructions />
   </div>,
   document.body.appendChild(document.createElement('div')),
