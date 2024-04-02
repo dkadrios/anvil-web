@@ -10,22 +10,34 @@ body {
     text-decoration: none;
   }
 
-  .downloadLink {
+  .link {
+    span {
+      display: block;
+    }
     font-size: 22px;
-    padding: 0 0 10px 20px;
+    padding: 10px 0 0px 20px;
     margin-top: -5px;
 
-    span::before {
-      content: '';
-      background-image: url(download.svg);
-      background-size: 100% 100%;
-      display: inline-block;
-      height: 50px;
-      width: 50px;
-      position: relative;
-      right: 10px;
-      top: 16px;
+    display: flex;
+    flex-flow: row wrap;
+
+    a {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      margin-right: 55px;
     }
+  }
+
+  .link .material-symbols-outlined {
+    // display: inline-block;
+    // height: 50px;
+    // width: 50px;
+    // position: relative;
+    // right: 10px;
+    // top: 16px;
+    font-size: 4rem;
+    margin-right: 0.5rem;
   }
 
   h3 {

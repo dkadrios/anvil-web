@@ -14,21 +14,39 @@ ReactDOM.render(
         target="_blank"
         rel="noopener noreferrer"
       >
-        Zendrum STOMPBOX
-      </a>.<br />
+        Zendrum STOMPBLOCK
+      </a>
+      .<br />
     </p>
     <hr />
-    <p className="downloadLink">
-      <a href="https://zendrumstudio.com/includes/anvil/anvil-firmware.zip">
-        <span>Download latest firmware</span>
+    <p className="link">
+      <a href="stompblock37.zip">
+        <span className="material-symbols-outlined">cloud_download</span>
+        <span>Download Latest Firmware</span>
+      </a>
+
+      <a href="#instructions">
+        <span className="material-symbols-outlined">description</span>
+        <span>Firmware Instructions</span>
       </a>
     </p>
     <hr />
     <h3>Updates</h3>
     <Releases />
     <hr />
-    <h3>Applying the Update</h3>
+    <h3 id="instructions">
+      <div
+        className="material-symbols-outlined"
+        style={{
+          position: 'relative',
+          top: '3px',
+        }}
+      >
+        description
+      </div>
+      Applying the Update
+    </h3>
     <Instructions />
   </div>,
-  document.body.appendChild(document.createElement('div')),
+  document.body.appendChild(document.createElement('div'))
 )
